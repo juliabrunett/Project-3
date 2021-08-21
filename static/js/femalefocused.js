@@ -39,7 +39,7 @@ function buildBubble() {
         //colorscale: "RdBu"
       },
       hovertemplate:
-      "<b>Title: %{text.Title}<br>Genre: %{text.Genre}<br>Director: %{text.Director}<br>Release Date: %{text.Release_Date} <br> Run Time: %{text.Run_Time}</b><extra></extra>"
+      "<b>Title:</b> %{text.Title}<br><b>Genre:</b> %{text.Genre}<br><b>Director:</b> %{text.Director}<br><b>Release Date:</b> %{text.Release_Date} <br> <b>Run Time:</b>%{text.Run_Time}<extra></extra>"
     }];
     var layout = {
       title: `Female Lead or Directed Film Recommendations`,
