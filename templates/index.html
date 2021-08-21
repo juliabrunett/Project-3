@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- <link rel="icon" type="image/png" href="../static/images/no_guns.png"> -->
+  <title>Movie Recommendations</title>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous"> 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> 
+  <!-- CSS -->
+  <!-- <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='./css/style.css') }}" /> -->
+</head>
+<body>
+  <h1>Movie Recommendations</h1>
+  <!-- Navigation -->
+  <ul class="nav justify-content-center">
+    <li class="nav-item">
+      <a class="nav-link" href="/">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/femalefocused">Female Focused</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/international">International</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/lowbudget">Low Budget</a>
+    </li>
+  </ul>
+  <nav class="AlphabetNav">
+    <a href="#A">A</a>
+    <a href="#B">B</a>
+    <a href="#C">C</a>
+    <a href="#D">D</a>
+    <a href="#E">E</a>
+    <a href="#F">F</a>
+    <a href="#G">G</a>
+    <a href="#H">H</a>
+    <a href="#I">I</a>
+    <a href="#J">J</a>
+    <a href="#K">K</a>
+    <a href="#L">L</a>
+    <a href="#M">M</a>
+    <a href="#N">N</a>
+    <a href="#O">O</a>
+    <a href="#P">P</a>
+    <a href="#Q">Q</a>
+    <a href="#R">R</a>
+    <a href="#S">S</a>
+    <a href="#T">T</a>
+    <a href="#U">U</a>
+    <a href="#V">V</a>
+    <a href="#W">W</a>
+    <a href="#X">X</a>
+    <a href="#Y">Y</a>
+    <a href="#Z">Z</a>
+  </nav>
+
+  <h1>Enter a movie title:</h1>
+
+  <form action="/api/similarity_scores">
+    <label for="title">Movie Title:</label>
+    <input type="text" id="chosenTitle">
+
+</body>
+</html>
