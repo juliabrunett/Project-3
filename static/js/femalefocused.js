@@ -18,18 +18,28 @@ function buildBubble() {
     console.log(similarity);
     var title = slicedArray.map(d => d.title);
     var genres = slicedArray.map(d => d.genres);
-
+    var director = slicedArray.map(d => d.director);
+    var release = slicedArray.map(d=> d.release_date)
+    var runtime = slicedArray.map(d=> d.runtime)
+    var Hoverinfo = []
+    for (i=0;i<director.length;i++){
+      p = {"Title":title[i], "Genre": genres[i], "Director":director[i],
+          "Release_Date":release[i],"Run_Time":runtime[i]+" min."}
+      Hoverinfo.push(p)
+    }
     // Build BUBBLE
     var data = [{
       x: revenue,
       y: budget,
-      text: title,
+      text: Hoverinfo,
       mode: 'markers',
       marker: {
         size: similarity * 100000000,
         color: revenue,
         //colorscale: "RdBu"
-      }
+      },
+      hovertemplate:
+      "<b>Title: %{text.Title}<br>Genre: %{text.Genre}<br>Director: %{text.Director}<br>Release Date: %{text.Release_Date} <br> Run Time: %{text.Run_Time}</b><extra></extra>"
     }];
     var layout = {
       title: `Female Lead or Directed Film Recommendations`,
