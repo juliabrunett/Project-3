@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <title>Diversity In Movies Database</title>
+
+     <!-- Bootstrap -->
+     <!--  Waiting for Flask app to use link below -->
+     <!-- <link rel="stylesheet" href="{{url_for('Static',filename='../css/style.css')}}"> -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous"> 
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+     <link rel="icon" href="../static/images/studio.jpg" type="image/x-icon">
+  </head>
+  
+  <body>
+    <div class="placeholder">
+        <div class="content-area">
+          <div class="content">
+          <h1 style="color: rgb(252, 166, 180);">DIVERSITY IN MOVIES DATABASE</h1>
+          <h2 style="color: rgb(252, 166, 180); font-size: 18px;">As Hollywood becomes more diverse, the films we recommend to viewers need to keep up at the same pace. Enter your favorite film below to view simlar international films, low-budget films, and films directed by women.</h2>
+
+                <div class="form-group">
+                  <button type="button" class="btn btn-secondary" href="../Templates/home.html">Home</button>
+                  <button type="button" class="btn btn-secondary" href="../Templates/femalefocused.html"onclick="handleSubmit_femaleFocused()">Female Focused</button>
+                  <button type="button" class="btn btn-secondary" href="../Templates/international.html"onclick="handleSubmit_international()">International</button>
+                  <button type="button" class="btn btn-secondary" href="../Templates/lowbudget.html"onclick="handleSubmit_lowBudget()">Low Budget</button>
+                <br>
+                <br>
+            <form class="navbar-form navbar-right">
+            <div class="form-group">
+                <input type="text" placeholder="Enter Movie" id="userInput" name="userInput" class="form-control" style="width: 300px; align-items: center; margin-inline: 550px;">
+            </div>
+              <!-- <button type="button" class="btn btn-secondary" onclick="handleSubmit()">Update</button> -->
+            </form>
+          </div>
+        </div>
+      </div>
+    </div> 
+    <script src ="../static/js/home.js"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+  </body>
+</html>
