@@ -1,0 +1,13 @@
+  /* international.html - so maps will show */
+  body {
+    padding: 0;
+    margin: 0;
+  }
+  #map-id,
+  body,
+  html {
+    height: 100%;
+  }
+  .leaflet-popup-content {
+    text-align: center;
+  }
