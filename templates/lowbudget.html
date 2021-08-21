@@ -17,7 +17,7 @@
     <nav class="navbar">
       <ul>
         <li>
-          <p><a class="btn btn-primary btn-lg" href="/em1app.py" role="button">Total Lowest Budgets Movies</a></p>
+          <p><a class="btn btn-primary btn-lg" href="/em1app.py" role="button">Total Lowest Budget Movies</a></p>    
         </li>
         <li>
           <p><a class="btn btn-primary btn-lg" href="/em2app.py" role="button">Most Popular Low Budget Movies</a></p>
@@ -26,7 +26,13 @@
           <p><a class="btn btn-primary btn-lg" href="/em3app.py" role="button">Least Popular Low Budget Movies</a></p>
         </li>
       </ul>
-      
+      <div>
+        {% extends "base.html" %}
+        {% block content %}
+        <h1>{{name}}</h1>
+        {{data | safe}}
+        {% endblock %}
+      </div>
     </nav>
    </div>
   
